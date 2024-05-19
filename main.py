@@ -17,5 +17,5 @@ server_address = ('', port)
 
 # Initialize and start the server
 httpd = HTTPServer(server_address, MyHttpRequestHandler)
-print(f"Serving HTTP on port {port}...")
+print(f"Serving HTTP on port http://localhost:{port}...")
 httpd.serve_forever()

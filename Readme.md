@@ -11,14 +11,15 @@ This project features a simple HTTP server written in Python that serves static 
 ### index.html # Example HTML file to be served
 
 ## Build and Run with Docker
-### Build the Docker image:
 ```bash
 docker build -t simple-http-server .
-```
-### Run the container:
-From the project directory, run:
-```bash
 docker run -p 8000:8000 simple-http-server
+```
+
+## Or pull from Docker HUB
+```bash
+docker pull samxal/simple-http-server:latest 
+docker run -p 8000:8000 samxal/simple-http-server
 ```
 
 ### Access the server at http://localhost:8000.
